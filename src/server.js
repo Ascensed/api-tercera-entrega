@@ -49,12 +49,12 @@ function loginByToken(req) {
 
 app.post('/login', (req, res) => {
 
-    if (loginByToken(req)) {
+/*     if (loginByToken(req)) {
         res.status(200).json({
             message: "Login con token excitoso!",
         });
         return;
-    }
+    } */
 
     const request = JSON.parse(JSON.stringify(req.body));
 
